@@ -255,7 +255,6 @@ class ScipyMaxDisjointCollection(CliqueCoverSolver):
 
     def cover(self) -> CliqueCover:
         N, k = self.N, self.k
-        universe = dict(enumerate(map(frozenset, combinations(range(N), k))))
         possible_cliques = list(self.maximal_cliques(self.A_only))
         possible_cliques = [
             c for c in possible_cliques if len(c) == max(k + 1, N - k + 1)
@@ -321,7 +320,6 @@ class OptimalSetCover(CliqueCoverSolver):
         universe = dict(enumerate(map(frozenset, combinations(range(N), k))))
         universe_rev = {v: k for k, v in universe.items()}
         possible_cliques = list(self.maximal_cliques(self.A_only))
-        c = np.repeat(1, len(possible_cliques))
         A = np.zeros((len(universe), len(possible_cliques)))
         for si, s in enumerate(possible_cliques):
             for x in s:
