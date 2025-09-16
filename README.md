@@ -6,7 +6,7 @@ This repository contains various methods for generating small clique covers of J
 
 This repository contains the code for the computer-assisted proofs in
 
-* Jørgensen, S. F.. "On the clique covering numbers of Johnson graphs". *Designs Codes and Cryptography*. [doi:10.1007/s10623-025-01663-3](https://doi.org/10.1007/s10623-025-01663-3). [arXiv:2502.15019](https://arxiv.org/abs/2502.15019).
+* Jørgensen, S. F.. "On the clique covering numbers of Johnson graphs". *Des. Codes Cryptogr.* **93**, 3689–3705 (2025). [doi:10.1007/s10623-025-01663-3](https://doi.org/10.1007/s10623-025-01663-3). [arXiv:2502.15019](https://arxiv.org/abs/2502.15019).
 
 Concretely, [`tests/test_reproduce_paper.py`](https://github.com/Kvantify/johnson-clique-cover/blob/master/tests/test_reproduce_paper.py) contains a collection of tests for each of the claims made in the above paper.
 
